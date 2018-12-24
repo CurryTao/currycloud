@@ -7,7 +7,7 @@ spring:
   cache:
     cache-names: mdc-cache
   datasource:
-    url: jdbc:mysql://paascloud-db-mysql:3306/paascloud_mdc?characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://47.93.44.147:3306/paascloud_mdc?characterEncoding=utf8&useSSL=false
 
 liquibase:
   change-log: classpath:liquibase/index.xml
@@ -74,3 +74,4 @@ paascloud:
       clientSecret: ${security.oauth2.client.clientSecret}
       clientAuthenticationScheme: header
       tokenStore: jwt
+      
