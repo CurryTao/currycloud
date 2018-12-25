@@ -19,7 +19,7 @@ spring:
     password: guest
   redis:
     host: 127.0.0.1
-    password: paascloud@redis
+    #password: paascloud@redis
     port: 6379
     timeout: 0
   datasource:
@@ -40,7 +40,7 @@ spring:
         login-password: admin
   mail:
     host: smtp.163.com
-    username: 13171781461@163.com
+    username: m13171781461@163.com
     password: zyt2840301752
     port: 465
     protocol: smtp
@@ -109,7 +109,7 @@ paascloud:
       accessKeyId: 'your aliyun accessKeyId'
       accessKeySecret: 'your aliyun accessKeySecret'
     rocketMq:
-      namesrvAddr: paascloud-mq-rocket:9876
+      namesrvAddr: 127.0.0.1:9876
     sms:
       signName: ceshi
       regionId: cn-beijing
@@ -131,4 +131,4 @@ paascloud:
       pcPath: /data/file/qrCode/alipay
       qiniuPath: alipay/QRCode/
   zk:
-    zkAddressList: paascloud-provider-zk:2181
+    zkAddressList: 127.0.0.1:2181
